@@ -2,8 +2,6 @@
 This script converts Kafka user ACL YAML files to a format where operations are merged by resource. This addresses a change introduced in Kafka Strimzi 0.30, where the YAML format for ACLs no longer requires separate entries for each operation on a resource. This script helps migrate your existing ACL configurations to the new format.
 
 ## How it Works
-(The functionality remains the same as before)
-
 The script iterates through all YAML files in the specified directory (<PATH TO FILE>/*.yaml).
 For each file, it reads the YAML content and checks if the authorization.acls section exists.
 
